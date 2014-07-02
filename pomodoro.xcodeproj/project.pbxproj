@@ -13,6 +13,10 @@
 		E33507281963EE7B00BA29F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E33507261963EE7B00BA29F7 /* Main.storyboard */; };
 		E335072A1963EE7B00BA29F7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E33507291963EE7B00BA29F7 /* Images.xcassets */; };
 		E33507361963EE7B00BA29F7 /* pomodoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33507351963EE7B00BA29F7 /* pomodoroTests.swift */; };
+		E335074A196404A600BA29F7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3350749196404A600BA29F7 /* NotificationCenter.framework */; };
+		E335074F196404A600BA29F7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E335074E196404A600BA29F7 /* TodayViewController.swift */; };
+		E3350751196404A600BA29F7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3350750196404A600BA29F7 /* MainInterface.storyboard */; };
+		E3350754196404A600BA29F7 /* com.honglan.pomodoro.clock.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E3350747196404A600BA29F7 /* com.honglan.pomodoro.clock.appex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +27,49 @@
 			remoteGlobalIDString = E33507191963EE7B00BA29F7;
 			remoteInfo = pomodoro;
 		};
+		E335073F196403B600BA29F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E33507121963EE7B00BA29F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E33507191963EE7B00BA29F7;
+			remoteInfo = pomodoro;
+		};
+		E3350741196403B600BA29F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E33507121963EE7B00BA29F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E33507191963EE7B00BA29F7;
+			remoteInfo = pomodoro;
+		};
+		E3350752196404A600BA29F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E33507121963EE7B00BA29F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3350746196404A600BA29F7;
+			remoteInfo = clock;
+		};
+		E3350755196404A600BA29F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E33507121963EE7B00BA29F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3350746196404A600BA29F7;
+			remoteInfo = clock;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E335075A196404A600BA29F7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E3350754196404A600BA29F7 /* com.honglan.pomodoro.clock.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E335071A1963EE7B00BA29F7 /* pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +82,11 @@
 		E335072F1963EE7B00BA29F7 /* pomodoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pomodoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33507341963EE7B00BA29F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E33507351963EE7B00BA29F7 /* pomodoroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pomodoroTests.swift; sourceTree = "<group>"; };
+		E3350747196404A600BA29F7 /* com.honglan.pomodoro.clock.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = com.honglan.pomodoro.clock.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3350749196404A600BA29F7 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		E335074D196404A600BA29F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E335074E196404A600BA29F7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		E3350750196404A600BA29F7 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +104,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3350744196404A600BA29F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E335074A196404A600BA29F7 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +120,8 @@
 			children = (
 				E335071C1963EE7B00BA29F7 /* pomodoro */,
 				E33507321963EE7B00BA29F7 /* pomodoroTests */,
+				E335074B196404A600BA29F7 /* clock */,
+				E3350748196404A600BA29F7 /* Frameworks */,
 				E335071B1963EE7B00BA29F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +131,7 @@
 			children = (
 				E335071A1963EE7B00BA29F7 /* pomodoro.app */,
 				E335072F1963EE7B00BA29F7 /* pomodoroTests.xctest */,
+				E3350747196404A600BA29F7 /* com.honglan.pomodoro.clock.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +174,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E3350748196404A600BA29F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3350749196404A600BA29F7 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E335074B196404A600BA29F7 /* clock */ = {
+			isa = PBXGroup;
+			children = (
+				E335074E196404A600BA29F7 /* TodayViewController.swift */,
+				E3350750196404A600BA29F7 /* MainInterface.storyboard */,
+				E335074C196404A600BA29F7 /* Supporting Files */,
+			);
+			path = clock;
+			sourceTree = "<group>";
+		};
+		E335074C196404A600BA29F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E335074D196404A600BA29F7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +210,13 @@
 				E33507161963EE7B00BA29F7 /* Sources */,
 				E33507171963EE7B00BA29F7 /* Frameworks */,
 				E33507181963EE7B00BA29F7 /* Resources */,
+				E335075A196404A600BA29F7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E3350753196404A600BA29F7 /* PBXTargetDependency */,
+				E3350756196404A600BA29F7 /* PBXTargetDependency */,
 			);
 			name = pomodoro;
 			productName = pomodoro;
@@ -144,11 +235,30 @@
 			);
 			dependencies = (
 				E33507311963EE7B00BA29F7 /* PBXTargetDependency */,
+				E3350740196403B600BA29F7 /* PBXTargetDependency */,
+				E3350742196403B600BA29F7 /* PBXTargetDependency */,
 			);
 			name = pomodoroTests;
 			productName = pomodoroTests;
 			productReference = E335072F1963EE7B00BA29F7 /* pomodoroTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E3350746196404A600BA29F7 /* clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3350757196404A600BA29F7 /* Build configuration list for PBXNativeTarget "clock" */;
+			buildPhases = (
+				E3350743196404A600BA29F7 /* Sources */,
+				E3350744196404A600BA29F7 /* Frameworks */,
+				E3350745196404A600BA29F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = clock;
+			productName = clock;
+			productReference = E3350747196404A600BA29F7 /* com.honglan.pomodoro.clock.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -167,6 +277,10 @@
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = E33507191963EE7B00BA29F7;
 					};
+					E3350746196404A600BA29F7 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = S2T7B5WDM4;
+					};
 				};
 			};
 			buildConfigurationList = E33507151963EE7B00BA29F7 /* Build configuration list for PBXProject "pomodoro" */;
@@ -184,6 +298,7 @@
 			targets = (
 				E33507191963EE7B00BA29F7 /* pomodoro */,
 				E335072E1963EE7B00BA29F7 /* pomodoroTests */,
+				E3350746196404A600BA29F7 /* clock */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +317,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3350745196404A600BA29F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3350751196404A600BA29F7 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +349,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3350743196404A600BA29F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E335074F196404A600BA29F7 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -233,6 +364,26 @@
 			isa = PBXTargetDependency;
 			target = E33507191963EE7B00BA29F7 /* pomodoro */;
 			targetProxy = E33507301963EE7B00BA29F7 /* PBXContainerItemProxy */;
+		};
+		E3350740196403B600BA29F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E33507191963EE7B00BA29F7 /* pomodoro */;
+			targetProxy = E335073F196403B600BA29F7 /* PBXContainerItemProxy */;
+		};
+		E3350742196403B600BA29F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E33507191963EE7B00BA29F7 /* pomodoro */;
+			targetProxy = E3350741196403B600BA29F7 /* PBXContainerItemProxy */;
+		};
+		E3350753196404A600BA29F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3350746196404A600BA29F7 /* clock */;
+			targetProxy = E3350752196404A600BA29F7 /* PBXContainerItemProxy */;
+		};
+		E3350756196404A600BA29F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3350746196404A600BA29F7 /* clock */;
+			targetProxy = E3350755196404A600BA29F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -387,6 +538,34 @@
 			};
 			name = Release;
 		};
+		E3350758196404A600BA29F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = clock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "com.honglan.pomodoro.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E3350759196404A600BA29F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = clock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "com.honglan.pomodoro.$(TARGET_NAME:rfc1034identifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -406,12 +585,22 @@
 				E335073B1963EE7B00BA29F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E335073C1963EE7B00BA29F7 /* Build configuration list for PBXNativeTarget "pomodoroTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E335073D1963EE7B00BA29F7 /* Debug */,
 				E335073E1963EE7B00BA29F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3350757196404A600BA29F7 /* Build configuration list for PBXNativeTarget "clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3350758196404A600BA29F7 /* Debug */,
+				E3350759196404A600BA29F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
